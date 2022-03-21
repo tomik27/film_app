@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add CSS and JS to Thymeleaf</title>
+    <link th:href="@{/style.css}" rel="stylesheet"/>
+</head>
+<body>
+<div th:replace="fragments/navigation ::navbar"></div>
+<h2>Film </h2>
+<section>
+    <div class="wrapper">
+        <div class="padding_hlavicka">
+        </div>
+        <div class="zarovnani-left">
+            <div class="vypis-filmu">
+                <div class="zarovnani-right">
+
+                    <img width="140px" height="200px"></div>
+                    <h1 th:text="${film.name}"></h1>
+                    <br>
+                    <br>
+                    <h3 th:text="${film.director}"></h3>
+                    <h3 th:text="${film.releaseDate}"></h3>
+                    <div class="popis-filmu">
+
+
+                    </div>
+                    <div class="hodnoceniUzivatele">
+
+                    </div>
+                    <div class="komentare">
+
+
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>

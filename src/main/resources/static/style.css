@@ -1,0 +1,151 @@
+header {
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: left;
+    padding: 5px;
+    height: 46px;
+    background-color:white;
+    border-bottom:5px  solid red;
+}
+
+header nav a {
+    display: inline-block;
+    color: black;
+    text-align: left;
+    padding: 8px 12px;
+    margin: 0px 6px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    background: red;
+    transition: 1s;
+    border: 2px red solid;
+}
+
+table {
+    border:none;
+    width: 80%;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+tr:nth-child(even){background-color: #dbdbdb}
+
+
+th {
+    background-color: red;
+    color: white;
+}
+.table_center{
+    margin-left:auto;
+    margin-right:auto;
+}
+/* style fiml */
+
+
+.obrazek_film{
+    background-color: #e8e8e8;
+    border-top: 12px solid #c5091a;
+    padding: 10px;
+    width: 700px;
+    margin-bottom: 10px;
+    height: 180px;
+}
+
+
+h1.hodnoceni-pismo {
+    font-size: 50px;
+}
+
+.zarovnani-left {
+    float: left;
+}
+.zarovnani-center {
+    display: inline-block;
+}
+.zarovnaniText-right {
+    text-align: right;
+}
+.zarovnani-right {
+    float: right;
+}
+.wrapper{
+    width: 1000px;
+    margin: 0 auto 30px;
+    padding: 0;
+}
+.vypis-filmu {
+    border-top: 6px solid red;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.hodnoceni-velky {
+    background-color: red;
+    border-radius: 25px;
+    padding: 10px;
+    width: 250px;
+    margin-left: 10px;
+    color: #fff;
+    text-align: center;
+}
+.hodnoceni-uzivatelu {
+    padding: 10px;
+    width: 250px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.hodnoceni {
+    line-height: 20px;
+    width: 100%;
+}
+
+.popis-filmu {
+    border-top: 4px solid red;
+    padding: 10px;
+    width: 700px;
+    margin-bottom: 10px;
+    background-color: #e8e8e8;
+}
+.hodnoceniUzivatele{
+    background-color: #e8e8e8;
+    border-top: 12px solid #d0d0d0;
+    padding: 10px;
+    width: 700px;
+    height: 70px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.komentar{
+    border-top: 8px  red;
+}
+.komentare {
+    background-color: #e8e8e8;
+    border-top: 12px solid #d0d0d0;
+    padding: 10px;
+    width: 700px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.wrapper::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.osoba_informace{
+    width: 1200px;
+}
+
+.osoba_ohraniceni{
+    width: 250px;
+    border-style: solid;
+    border-image-width: 100px;
+    border-width:thin;
+    border-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 5px;
+}

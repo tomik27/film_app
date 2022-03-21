@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add CSS and JS to Thymeleaf</title>
+    <link th:href="@{/style.css}" rel="stylesheet" />
+</head>
+<body>
+<div  th:replace="fragments/navigation ::navbar"></div>
+<h2>Film list</h2>
+<section class="product-list">
+
+    <table class="table_center" >
+               <tr>
+            <th>ID</th>
+            <th>Film</th>
+            <th>zanr</th>
+            <th>datum vydani</th>
+            <th>Reziser</th>
+        </tr>
+
+
+            <tr class="film" th:each="film : ${filmList}">
+                <td  th:text="${film.id}"></td>
+                <td > <a th:href="@{/film/{id} (id=${film.getId()})}"><p th:text="${film.name}"></p></a></td>
+                <td th:text="${film.genre}"></td>
+                <td th:text="${film.releaseDate}"></td>
+                <td th:text="${film.director}"></td>
+                <tr/>
+
+</table>
+</section>
+
+</body>
+</html>

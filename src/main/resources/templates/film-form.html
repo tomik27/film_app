@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/head ::htmlhead">
+    <link th:href="@{/style.css}" rel="stylesheet" />
+
+<body>
+<h2>Add ore edit Film </h2>
+<section>
+    <!--multipart posilani obrazku? -->
+    <form action="#" th:action="@{/film-form-process}" th:object="${film}" method="post" enctype="multipart/form-data">
+        <input type="hidden" placeholder="id" th:field="*{id}" />
+        <input type="text" placeholder="název" th:field="*{name}" />
+        <textarea placeholder="reziser"  th:field="*{director}" ></textarea>
+        <input type="date" th:field="*{releaseDate}" >
+        <input type="submit">
+
+    </form>
+
+</section>
+
+</body>
+</html>

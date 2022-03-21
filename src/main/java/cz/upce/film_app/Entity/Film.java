@@ -1,5 +1,7 @@
 package cz.upce.film_app.Entity;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.*;
 import java.text.DateFormat;
 import java.util.Date;
@@ -15,7 +17,7 @@ public class Film {
 
     private Genre genre;
   //  @Column(columnDefinition = )
-  @Temporal(TemporalType.DATE)
+  @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date releaseDate;
 
     private String Director;
